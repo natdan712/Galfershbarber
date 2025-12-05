@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Variables custom para tema barbería */
+:root {
+  --color-dark-bg: #1a1a1a;
+  --color-gold: #d4af37;
+  --color-accent: #c9302c;
+  --color-light-text: #f5f5f5;
+}
+
+body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* Colores para botones de barbería */
+.btn-primary {
+  @apply bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded transition;
+}
+
+.btn-gold {
+  @apply bg-yellow-600 hover:bg-yellow-700 text-black font-bold py-2 px-4 rounded transition;
+}
+
+/* Tema de barbería: dorado, rojo, gris oscuro */
+.card-barberia {
+  @apply bg-gray-800 border border-yellow-600 rounded-lg p-6 shadow-lg;
+}
+
+.navbar-barberia {
+  @apply bg-gray-900 border-b border-yellow-600 sticky top-0 z-50;
+}
+
+.title-barberia {
+  @apply text-3xl font-bold text-yellow-500 drop-shadow-lg;
+}
